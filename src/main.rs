@@ -1,8 +1,9 @@
-use advent_of_code_2023::{daily::day07::{day07_1, day07_2}, utils::read};
+use advent_of_code_2023::{daily::day08::day08_2, utils::read};
 
 fn main() {
-    let data = read("src/data/07".to_string());
-    // let answer = day07_1(&data);
-    let answer = day07_2(&data);
+    let steps = read("src/data/08_steps".to_string());
+    let data = read("src/data/08".to_string());
+    // let answer = day08_1(&steps, &data);
+    let answer = day08_2(&steps,&data);
     println!("{answer:?}");
 }
